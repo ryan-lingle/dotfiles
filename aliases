@@ -5,3 +5,40 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+alias rspec="bundle exec rspec"
+alias commit="git commit -m"
+alias lvh="rails s -p 3000 -b lvh.me"
+alias svs="lsof -wni tcp:3000"
+alias gst="git status"
+
+# alias btest="bitcoin-cli -rpcwallet=test_wallet -regtest"
+
+# rekr aliases
+# alias sq="npx sequelize-cli"
+# alias rb-all="npx sequelize-cli db:migrate:undo:all --to 2019062300000-create-user.js"
+# alias rb-one="npx sequelize-cli db:migrate:undo"
+# alias pvd="cd ~/code/ryan-lingle/peerview/peerview-data-web/ && stt"
+# alias rs="cd ~/code/ryan-lingle/rekr/server/src && stt && cd ../"
+# alias rc="cd ~/code/ryan-lingle/rekr/client/src && stt"
+alias aliases="subl ~/.aliases"
+
+
+# bitcoin aliases
+# alias btcdir="cd ~/.bitcoin/" #linux default bitcoind path
+# alias bc="bitcoin-cli"
+# alias bd="bitcoind"
+# alias btcinfo='bitcoin-cli getwalletinfo | egrep "\"balance\""; bitcoin-cli getnetworkinfo | egrep "\"version\"|connections"; bitcoin-cli getmininginfo | egrep "\"blocks\"|errors"'
+# alias btcblock="echo \`bitcoin-cli getblockcount 2>&1\`/\`wget -O - http://blockexplorer.com/testnet/q/getblockcount 2> /dev/null | cut -d : -f2 | rev | cut -c 2- | rev\`"alias btcdir="cd ~/.bitcoin/" #linux default bitcoind path
+
+
+# urbit aliases
+alias urbit="/nix/store/p68i4b1z3i387lrvhg6z6dd0il6wmnhw-urbit/bin/urbit"
+alias bootbus="urbit -F bus -A pkg/arvo -B bin/solid.pill -c ~/ships/bus"
+alias bootzod="urbit -F zod -A pkg/arvo -B bin/solid.pill -c ~/ships/zod"
+alias bootnec="urbit -F nec -A pkg/arvo -B bin/solid.pill -c ~/ships/nec"
+alias my-urbit="ssh pi@192.168.1.29"
+
+# ak aliases
+alias aks="npm run dev"
+alias akb="rm -r lib && npm run build"
+alias akbs="akb && aks"

@@ -25,6 +25,8 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
+[[ -f "$HOME/.zshfuncs" ]] && source "$HOME/.zshfuncs"
+
 
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
@@ -33,5 +35,13 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 
-alias old-mac='"Ryan Lingle"@192.168.1.91'export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+ . /Users/ryanlingle/.nix-profile/etc/profile.d/nix.sh
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ryanlingle/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryanlingle/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ryanlingle/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryanlingle/google-cloud-sdk/completion.zsh.inc'; fi
+alias subl="/cygdrive/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
