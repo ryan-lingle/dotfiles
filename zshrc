@@ -45,3 +45,4 @@ if [ -f '/Users/ryanlingle/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ryan
 if [ -f '/Users/ryanlingle/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ryanlingle/google-cloud-sdk/completion.zsh.inc'; fi
 alias subl="/cygdrive/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
